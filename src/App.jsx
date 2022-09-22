@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 
 import './App.css';
 import Card from './components/Card';
@@ -6,13 +6,19 @@ import Main from './components/Main';
 import Navbar from './components/Navbar';
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <div className="App">
       <Navbar />
       <Main />
-      <Card />
+      <Card
+        img="../images/img1.png"
+        rating="5.0"
+        reviewCount={6}
+        country="USA"
+        title="Life Lessons with Katie Zaferes"
+        price={136} />
     </div>
   )
 }
